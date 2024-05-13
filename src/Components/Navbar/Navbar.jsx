@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="navBarTwo flex">
           <div className="logoDiv">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              src="./src/assets/logo.jpg"
               alt="logo"
               className="logo"
             />

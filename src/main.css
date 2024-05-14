@@ -251,4 +251,27 @@ h2 {
   width: 100%;
   top: -25%;
   transform: rotate(-7deg);
+}
+
+.sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.sectionContainer .btns {
+  width: 100%;
+  background: var(--SecondaryColor);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin: auto;
+}
+.sectionContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -294,4 +294,29 @@ h2{
     }
 }
 
+
+// Search
+.sectionContainer{
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid var(--greyBg);
+    border-radius: 16px;
+    row-gap: 2rem;
+
+    .btns{
+        width: 100%;
+        background: var(--SecondaryColor);
+        padding: .5rem;
+        border-radius: 1rem;
+        flex-direction: column;
+        margin: auto;
+        .singleBtn{
+            padding: .8rem 1.5rem;
+            font-size: 13px;
+            border-radius: 3rem;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
 // End Section Style

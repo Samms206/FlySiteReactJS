@@ -92,7 +92,7 @@ img, video{
     height: auto;
 }
 
-input{
+.input{
     font-size: 100%;
     color: var(--blackColor);
     background: var(--greyText);
@@ -297,62 +297,135 @@ h2{
 
 
 // Search
-.sectionContainer{
+.search{
     width: 100%;
-    padding: 1.5rem;
-    border: 2px solid var(--greyBg);
-    border-radius: 16px;
-    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
 
-    .btns{
-        width: 100%;
-        background: var(--SecondaryColor);
+    .sectionContainer{
+
+        width: 80%;
         padding: .5rem;
-        border-radius: 1rem;
-        flex-direction: column;
-        margin: auto;
-        .singleBtn{
-            padding: .8rem 1.5rem;
-            font-size: 13px;
+        border: 2px solid var(--greyBg);
+        border-radius: 16px;
+        row-gap: 2rem;
+    
+        .btns{
+            width: 60%;
+            background: var(--SecondaryColor);
+            padding: .5rem;
+            justify-content: space-between;
             border-radius: 3rem;
-            width: 80%;
-            text-align: center;
-
-            &:hover{
+            margin: auto;
+            .singleBtn{
+                padding: .8rem 1.5rem;
+                font-size: 13px;
+                border-radius: 3rem;
+                width: 30%;
+                text-align: center;
+    
+                &:hover{
+                    background: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    transition: .4s ease;
+                }
+            }
+    
+            .active{
                 background: var(--PrimaryColor);
                 color: var(--whiteColor);
                 font-weight: 500;
-                transition: .4s ease;
             }
+
         }
 
-        .active{
-            background: var(--PrimaryColor);
-            color: var(--whiteColor);
-            font-weight: 500;
-        }
-
-        .searchInputs{
-            width: 100%;
+        .wrapSearch {
+            display: flex;
             justify-content: center;
-            flex-direction: column;
-            gap: 1.5rem;
+            align-items: center;
 
-            .singleInput{
-                .iconDiv{
-                    padding: 16px 10px;
-                    border-radius: 3rem;
-                    background: var(--SecondaryColor);
-                    margin-right: 1rem;
-                }
-                .icon{
-                    color: var(--blackColor);
-                    opacity: .7;
-                }
+            .searchInputs {
+                flex-direction: row;
+                width: 100%;
+                gap: 1.5rem;
+    
+                // .singleInput{
+                    .iconDiv{
+                        padding: 16px 10px;
+                        border-radius: 3rem;
+                        background: var(--SecondaryColor);
+                        margin-right: 1rem;
+                    }
+                    .icon{
+                        color: var(--blackColor);
+                        opacity: .7;
+                    }
+    
+                    .texts{
+                        h4{
+                            padding-top: 0;
+                            padding-bottom: .7rem;
+                            color: var(--blackColor);
+                            font-weight: 700;
+                        }
+    
+                        input{
+                            width: 95%;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+    
+                            &::placeholder{
+                                font-size: 12px;
+                                opacity: .5;
+                            }
+                        }
+                    }
+                // }
+            }
+            .btnBlock {
+                width: 30%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
             }
         }
     }
 
+    @media screen and (max-width: 910px){
+        .wrapSearch {
+            flex-direction: column;
+        }
 
+        .sectionContainer{
+            width: 100%;
+            .btns{
+                width: 100%;
+            }
+
+            .wrapSearch {
+               .searchInputs {
+                margin-bottom: 1rem;
+               }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 400px){
+        .btns.flex{
+            border-radius: 12px;
+            flex-direction: column;
+            .singleBtn{
+                min-width: 100%;
+            }
+        }
+
+        .btn.btnBlock.flex{
+            width: 100%;
+        }
+        
+    }
 }
 // End Section Style

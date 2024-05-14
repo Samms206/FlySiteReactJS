@@ -1,11 +1,11 @@
-import React from 'react'
-import { HiOutlineLocationMarker } from 'react-icons/hi'
-import { RiAccountPinCircleLine } from 'react-icons/ri'
-import { RxCalendar} from 'react-icons/rx'
+import React from "react";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { RiAccountPinCircleLine } from "react-icons/ri";
+import { RxCalendar } from "react-icons/rx";
 
 const Search = () => {
   return (
-    <div className='search container section'>
+    <div className="search container section flex">
       <div className="sectionContainer grid">
 
         <div className="btns flex">
@@ -20,54 +20,55 @@ const Search = () => {
           </div>
         </div>
 
-        {/* single input */}
-        <div className="searchInputs flex">
-          <div className="iconDiv">
-            <HiOutlineLocationMarker className='icon'/>
+        <div className="wrapSearch flex">
+          {/* single input */}
+          <div className="searchInputs flex">
+            <div className="iconDiv">
+              <HiOutlineLocationMarker className="icon" />
+            </div>
+            <div className="texts">
+              <h4>Location</h4>
+              <input type="text" placeholder="Where do you want to go?" />
+            </div>
           </div>
-          <div className="texts">
-            <h4>Location</h4>
-            <input type="text" placeholder='Where do you want to go?'/>
-          </div>
-        </div>
 
-        {/* single input */}
-        <div className="searchInputs flex">
-          <div className="iconDiv">
-            <RiAccountPinCircleLine className='icon'/>
+          {/* single input */}
+          <div className="searchInputs flex">
+            <div className="iconDiv">
+              <RiAccountPinCircleLine className="icon" />
+            </div>
+            <div className="texts">
+              <h4>Travelers</h4>
+              <input type="text" placeholder="Add guests" />
+            </div>
           </div>
-          <div className="texts">
-            <h4>Travelers</h4>
-            <input type="text" placeholder='Add guests'/>
-          </div>
-        </div>
 
-        {/* single input */}
-        <div className="searchInputs flex">
-          <div className="iconDiv">
-            <RxCalendar className='icon'/>
+          {/* single input */}
+          <div className="searchInputs flex">
+            <div className="iconDiv">
+              <RxCalendar className="icon" />
+            </div>
+            <div className="texts">
+              <h4>Check In</h4>
+              <input type="text" placeholder="Add date" />
+            </div>
           </div>
-          <div className="texts">
-            <h4>Check In</h4>
-            <input type="text" placeholder='Add date'/>
-          </div>
-        </div>
 
-        {/* single input */}
-        <div className="searchInputs flex">
-          <div className="iconDiv">
-            <RxCalendar className='icon'/>
+          {/* single input */}
+          <div className="searchInputs flex">
+            <div className="iconDiv">
+              <RxCalendar className="icon" />
+            </div>
+            <div className="texts">
+              <h4>Check Out</h4>
+              <input type="text" placeholder="Add date" />
+            </div>
           </div>
-          <div className="texts">
-            <h4>Check Out</h4>
-            <input type="text" placeholder='Add date'/>
-          </div>
+          <button className="btn btnBlock flex">Search</button>
         </div>
-
-        <button className="btn btnBlock flex">Search</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

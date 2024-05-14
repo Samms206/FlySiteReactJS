@@ -275,4 +275,31 @@ h2 {
   border-radius: 3rem;
   width: 80%;
   text-align: center;
+}
+.sectionContainer .btns .singleBtn:hover {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.sectionContainer .btns .active {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.sectionContainer .btns .searchInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sectionContainer .btns .searchInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--SecondaryColor);
+  margin-right: 1rem;
+}
+.sectionContainer .btns .searchInputs .singleInput .icon {
+  color: var(--blackColor);
+  opacity: 0.7;
 }/*# sourceMappingURL=main.css.map */

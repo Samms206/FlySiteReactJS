@@ -149,6 +149,7 @@ h2 {
   font-size: 700;
 }
 .navBar .navBarTwo {
+  background-color: var(--whiteColor);
   display: flex;
   align-items: center;
   justify-content: space-between;

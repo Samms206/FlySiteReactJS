@@ -296,7 +296,17 @@ h2{
             width: 100%;
             top: -25%;
             transform: rotate(-7deg);
+            animation: moveUpDown 1s infinite alternate ease-in-out;
         }
+
+        @keyframes moveUpDown {
+            0% {
+              top:  -25%; /* Posisi awal */
+            }
+            100% {
+              top: -20%; /* Posisi akhir */
+            }
+          }
     }
 }
 

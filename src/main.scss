@@ -20,7 +20,8 @@
     --whiteColorDeam:hsl(0,0%,93%) ;
     --greyBg: hsl(0, 0%,96%) ;
     --greyText: rgb(145, 145, 145);
-    --inputColor: hsl(330, 12%, 97%);--boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0рх 4px 6px -2px;
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0рх 4px 6px -2px;
     --transition: .4s ease-in-out;
 }
 
@@ -167,7 +168,7 @@ h2{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        top: 3rem;
+        top: 3.5rem;
         padding: .5rem 1rem;
         position: fixed;
         transition: .3s ease-in-out;
@@ -255,6 +256,10 @@ h2{
         }
     }
 
+    .withBg{
+        background-color: var(--SecondaryColor);
+        box-shadow: var(--boxShadow);
+    }
 }
 
 // HOME
@@ -428,4 +433,5 @@ h2{
         
     }
 }
+
 // End Section Style

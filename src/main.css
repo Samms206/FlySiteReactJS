@@ -452,4 +452,8 @@ h2 {
   .support .infoDiv .imgDiv {
     width: 100%;
   }
+}
+
+.info .infoContainer .titleDiv {
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

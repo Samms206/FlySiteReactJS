@@ -491,6 +491,12 @@ h2{
                     font-weight: 700;
                     color: var(--whiteColor);
                 }
+                .number.colorOne{
+                    background: var(--colorOne);
+                }
+                .number.colorTwo{
+                    background: var(--colorTwo);
+                }
             }
         }
         .imgDiv{
@@ -502,7 +508,7 @@ h2{
             flex-direction: column;
             gap: 2rem;
             .imgDiv{
-                width: 90%;
+                width: 100%;
             }
         }
 

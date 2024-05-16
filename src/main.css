@@ -435,6 +435,12 @@ h2 {
   font-weight: 700;
   color: var(--whiteColor);
 }
+.support .infoDiv .textDiv .singleInfo .number.colorOne {
+  background: var(--colorOne);
+}
+.support .infoDiv .textDiv .singleInfo .number.colorTwo {
+  background: var(--colorTwo);
+}
 .support .infoDiv .imgDiv {
   width: 40%;
 }
@@ -444,6 +450,6 @@ h2 {
     gap: 2rem;
   }
   .support .infoDiv .imgDiv {
-    width: 90%;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

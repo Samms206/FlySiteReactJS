@@ -52,7 +52,7 @@ li {
     padding-right: 4rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -144,6 +144,8 @@ h2 {
 }
 .navBar .navBarOne {
   background: var(--SecondaryColor);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .navBar .navBarOne .icon:hover {
   color: var(--PrimaryColor);
@@ -159,6 +161,12 @@ h2 {
 .navBar .navBarOne .atb:hover {
   color: var(--PrimaryColor);
   font-size: 700;
+}
+@media screen and (max-width: 768px) {
+  .navBar .navBarOne {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 .navBar .navBarTwo {
   background-color: var(--whiteColor);
@@ -433,9 +441,9 @@ h2 {
 @media screen and (max-width: 810px) {
   .support .infoDiv {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
   }
   .support .infoDiv .imgDiv {
-    width: 80%;
+    width: 90%;
   }
 }/*# sourceMappingURL=main.css.map */

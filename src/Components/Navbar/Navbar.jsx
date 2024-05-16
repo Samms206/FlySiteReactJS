@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="navBar flex">
-        <div className="navBarOne flex">
+        <div className="navBarOne flex ">
           <div className="icon">
             <SiConsul />
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className={noBg}>
           <div className="logoDiv">
             <img
-              src="./src/assets/logo.jpg"
+              src="./src/assets/logo.png"
               alt="logo"
               className="logo"
             />

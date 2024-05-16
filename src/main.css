@@ -392,7 +392,7 @@ h2 {
 
 .support {
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 .support .tittlesDiv {
   flex-direction: column;
@@ -400,12 +400,32 @@ h2 {
 .support .tittlesDiv small, .support .tittlesDiv h2, .support .tittlesDiv p {
   text-align: center;
 }
+.support .tittlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
 .support .infoDiv {
   width: 100%;
   justify-content: space-between;
 }
 .support .infoDiv .textDiv {
   flex-direction: column;
+}
+.support .infoDiv .textDiv .singleInfo {
+  margin-bottom: 1rem;
+}
+.support .infoDiv .textDiv .singleInfo .number {
+  background: var(--PrimaryColor);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
 }
 .support .infoDiv .imgDiv {
   width: 40%;

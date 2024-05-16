@@ -455,11 +455,18 @@ h2{
 //SUPPORT
 .support{
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     .tittlesDiv{
         flex-direction: column;
         small, h2, p{
             text-align: center;
+        }
+        small{
+            letter-spacing: .8rem;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: var(--blackColor);
+            line-height: 1.5rem;
         }
     }
     .infoDiv{
@@ -467,6 +474,19 @@ h2{
         justify-content: space-between;
         .textDiv{
             flex-direction: column;
+            .singleInfo{
+                margin-bottom: 1rem;
+                .number{
+                    background: var(--PrimaryColor);
+                    padding: 5px 12px;
+                    width: 40px;
+                    border-radius: 3rem;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: var(--whiteColor);
+                }
+            }
         }
         .imgDiv{
             width: 40%;

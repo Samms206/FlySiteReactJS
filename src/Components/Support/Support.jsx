@@ -2,18 +2,18 @@ import React from 'react'
 
 const Support = () => {
   return (
-    <div className='support container section'>
+    <div className='support container section flex'>
       <div className="sectionContainer">
 
-        <div className="tittlesDiv">
+        <div className="tittlesDiv flex">
           <small>Travel Support</small>
           <h2>Plan your trip with confidence</h2>
           <p>Find help with booking and travel plans, see what to expect along the journey!</p>
         </div>
       </div>
 
-      <div className="infoDiv grid">
-        <div className="textDiv grid">
+      <div className="infoDiv flex">
+        <div className="textDiv flex">
 
           <div className="singleInfo">
             <span className='number'>01</span>
@@ -33,7 +33,7 @@ const Support = () => {
         </div>
 
         <div className="imgDiv">
-          <img src="" alt="" />
+          <img src="./src/assets/3windows.png" alt="" />
         </div>
       </div>
       

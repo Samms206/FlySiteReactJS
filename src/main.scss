@@ -45,8 +45,16 @@ li{
 }   
 
 .container{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    @media screen and (max-width: 768px){
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    @media screen and (max-width: 400px){
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 
 }
 
@@ -442,6 +450,39 @@ h2{
         }
         
     }
+}
+
+//SUPPORT
+.support{
+    flex-direction: column;
+    gap: 4rem;
+    .tittlesDiv{
+        flex-direction: column;
+        small, h2, p{
+            text-align: center;
+        }
+    }
+    .infoDiv{
+        width: 100%;
+        justify-content: space-between;
+        .textDiv{
+            flex-direction: column;
+        }
+        .imgDiv{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 810px){
+        .infoDiv{
+            flex-direction: column;
+            gap: 4rem;
+            .imgDiv{
+                width: 80%;
+            }
+        }
+
+    }
+
 }
 
 // End Section Style

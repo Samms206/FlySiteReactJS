@@ -454,6 +454,71 @@ h2 {
   }
 }
 
+.info {
+  background: var(--SecondaryColor);
+  justify-content: center;
+  display: flex;
+}
+.info .infoContainer {
+  flex-direction: column;
+  gap: 3rem;
+  width: 70%;
+}
 .info .infoContainer .titleDiv {
+  width: 100%;
   justify-content: space-between;
+}
+.info .infoContainer .titleDiv h2 {
+  text-align: center;
+}
+.info .infoContainer .cardDiv {
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.info .infoContainer .cardDiv .singleCard {
+  padding: 6.5rem 1rem;
+  border-radius: 600px;
+  background: white;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.info .infoContainer .cardDiv .singleCard p, .info .infoContainer .cardDiv .singleCard .cardTittle {
+  text-align: center;
+}
+.info .infoContainer .cardDiv .singleCard p {
+  max-width: 250px;
+  font-size: 16px;
+}
+.info .infoContainer .cardDiv .singleCard .cardTittle {
+  font-weight: 700;
+  font-size: 18px;
+}
+.info .infoContainer .cardDiv .singleCard .iconDiv {
+  background: var(--PrimaryColor);
+  padding: 1.2rem 1rem;
+  border-radius: 100px;
+}
+.info .infoContainer .cardDiv .singleCard .iconDiv .icon {
+  color: white;
+  width: 24px;
+}
+.info .infoContainer .cardDiv .singleCard .iconDiv.colorOne {
+  background: var(--colorOne);
+}
+.info .infoContainer .cardDiv .singleCard .iconDiv.colorTwo {
+  background: var(--colorTwo);
+}
+@media screen and (max-width: 1100px) {
+  .info .infoContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .info .cardDiv, .info .titleDiv {
+    flex-direction: column;
+  }
+  .info .singleCard {
+    min-width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

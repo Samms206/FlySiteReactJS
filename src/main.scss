@@ -518,10 +518,75 @@ h2{
 
 //INFO
 .info{
+    background: var(--SecondaryColor);
+    justify-content: center;
+    display: flex;
     .infoContainer{
+        flex-direction: column;
+        gap: 3rem;
+        width: 70%;
         .titleDiv{
+            width: 100%;
             justify-content: space-between;
+            h2{
+                text-align: center;
+            }
         }
+
+        .cardDiv{
+            width: 100%;
+            justify-content: space-between;
+            gap: 1rem;
+            .singleCard{
+                padding: 6.5rem 1rem;
+                border-radius: 600px;
+                background: white;
+                gap: 1.5rem;
+                flex-direction: column;
+                p, .cardTittle{
+                    text-align: center;
+                }
+                p{
+                    max-width: 250px;
+                    font-size: 16px;
+                }
+                .cardTittle{
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                .iconDiv{
+                    background: var(--PrimaryColor);
+                    padding: 1.2rem 1rem;
+                    border-radius: 100px;
+                    .icon{
+                        color: white;
+                        width: 24px;
+                    }
+                }
+
+                .iconDiv.colorOne{
+                    background: var(--colorOne);
+                }
+                .iconDiv.colorTwo{
+                    background: var(--colorTwo);
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1100px){
+        .infoContainer{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 500px){
+     .cardDiv, .titleDiv{
+        flex-direction: column;
+     }
+
+     .singleCard{
+        min-width: 100%;
+     }
     }
 
 }

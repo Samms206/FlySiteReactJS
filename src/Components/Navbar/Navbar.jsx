@@ -11,6 +11,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   const [noBg, addBg] = useState('navBarTwo flex');
+  
   const addBgColor = () => {
     if (window.scrollY >= 10) {
       addBg('navBarTwo flex withBg')

@@ -537,4 +537,15 @@ h2 {
 }
 .longue .sectionContainer .wrapperGrid .grids .singleGrid p {
   max-width: 300px;
+}
+@media screen and (max-width: 810px) {
+  .longue .sectionContainer {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .longue .sectionContainer .wrapperGrid .grids {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */

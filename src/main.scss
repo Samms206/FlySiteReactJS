@@ -610,6 +610,19 @@ h2{
             }
         }
     }
+
+    @media screen and (max-width: 810px){
+        .sectionContainer{
+            row-gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        .sectionContainer .wrapperGrid .grids {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 // End Section Style

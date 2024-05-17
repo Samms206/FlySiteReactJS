@@ -591,4 +591,25 @@ h2{
 
 }
 
+//LOUNGE
+.longue{
+    .sectionContainer{
+        grid-template-columns: 2fr 1fr;
+        .wrapperGrid{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .grids{
+                row-gap: 1rem;
+                grid-template-columns: 2fr 2fr;
+                .singleGrid{
+                    p{
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // End Section Style

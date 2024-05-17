@@ -521,4 +521,20 @@ h2 {
   .info .singleCard {
     min-width: 100%;
   }
+}
+
+.longue .sectionContainer {
+  grid-template-columns: 2fr 1fr;
+}
+.longue .sectionContainer .wrapperGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.longue .sectionContainer .wrapperGrid .grids {
+  row-gap: 1rem;
+  grid-template-columns: 2fr 2fr;
+}
+.longue .sectionContainer .wrapperGrid .grids .singleGrid p {
+  max-width: 300px;
 }/*# sourceMappingURL=main.css.map */

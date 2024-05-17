@@ -545,6 +545,9 @@ h2 {
   }
 }
 @media screen and (max-width: 400px) {
+  .longue .sectionContainer .wrapperGrid .textDiv h2 {
+    text-align: center;
+  }
   .longue .sectionContainer .wrapperGrid .grids {
     grid-template-columns: 1fr;
   }

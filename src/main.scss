@@ -619,9 +619,18 @@ h2{
     }
 
     @media screen and (max-width: 400px){
-        .sectionContainer .wrapperGrid .grids {
-            grid-template-columns: 1fr;
-        }
+        .sectionContainer{
+            .wrapperGrid{
+                .textDiv{
+                    h2{
+                        text-align: center;
+                    }
+                }
+                .grids {
+                    grid-template-columns: 1fr;
+                }
+            }
+        } 
     }
 }
 

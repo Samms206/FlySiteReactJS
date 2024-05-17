@@ -615,6 +615,12 @@ h2{
         .sectionContainer{
             row-gap: 2rem;
             grid-template-columns: 1fr;
+            .wrapperGrid{
+                order: 2;
+            }
+            .imgDiv{
+                order: 1;
+            }
         }
     }
 

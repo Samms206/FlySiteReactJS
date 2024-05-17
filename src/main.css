@@ -543,6 +543,12 @@ h2 {
     row-gap: 2rem;
     grid-template-columns: 1fr;
   }
+  .longue .sectionContainer .wrapperGrid {
+    order: 2;
+  }
+  .longue .sectionContainer .imgDiv {
+    order: 1;
+  }
 }
 @media screen and (max-width: 400px) {
   .longue .sectionContainer .wrapperGrid .textDiv h2 {

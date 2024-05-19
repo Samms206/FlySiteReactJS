@@ -254,8 +254,9 @@ h2 {
 .home .mainText {
   color: var(--blackColor);
   font-weight: 700;
-  font-size: 15px;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  max-width: 700px;
+  line-height: 4.5rem;
 }
 .home .homeImages {
   width: 100%;
@@ -284,6 +285,18 @@ h2 {
   }
   100% {
     top: -20%; /* Posisi akhir */
+  }
+}
+@media screen and (max-width: 768px) {
+  .home .mainText {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home .mainText {
+    font-size: 1rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -569,6 +582,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .travelers .containerSection .travelersContainer .singleTraveler {
+  cursor: pointer;
   position: relative;
   height: 320px;
   width: 85%;

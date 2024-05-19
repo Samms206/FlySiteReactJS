@@ -781,4 +781,58 @@ h2{
         }
     }
 }
+
+.subscribe{
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    background: var(--SecondaryColor);
+
+    .sectoinContainer{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .inputDiv{
+            margin-top: .5rem;
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 10px;
+            padding-left: 1rem;
+            background: var(--whiteColor);
+            border-radius: 2rem;
+
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+
+            &:placeholder{
+                font-size: 13px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .sectoinContainer>.inputDiv{
+            flex-direction: column;
+            text-align: center;
+
+            input{
+                padding-top: .2rem;
+                text-align: center;
+            }
+            .btn{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
 // End Section Style

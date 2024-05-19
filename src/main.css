@@ -676,4 +676,52 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+.subscribe {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  background: var(--SecondaryColor);
+}
+.subscribe .sectoinContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscribe .sectoinContainer .inputDiv {
+  margin-top: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+  padding-left: 1rem;
+  background: var(--whiteColor);
+  border-radius: 2rem;
+}
+.subscribe .sectoinContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.subscribe .sectoinContainer .inputDiv:placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 450px) {
+  .subscribe .sectoinContainer > .inputDiv {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subscribe .sectoinContainer > .inputDiv input {
+    padding-top: 0.2rem;
+    text-align: center;
+  }
+  .subscribe .sectoinContainer > .inputDiv .btn {
+    margin-top: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -640,6 +640,7 @@ h2{
     }
 }
 
+//TRAVELERS
 .travelers{
     .containerSection{
         text-align: center;
@@ -782,6 +783,7 @@ h2{
     }
 }
 
+//SUBSCRIBE
 .subscribe{
     margin-top: 2rem;
     padding-bottom: 4rem;
@@ -832,6 +834,94 @@ h2{
             .btn{
                 margin-top: 1rem;
             }
+        }
+    }
+}
+
+//FOOTER
+.footer{
+    width: 100%;
+    background: var(--SecondaryColor);
+    padding-bottom: 4rem;
+
+    .sectionContainer{
+        width: 100%;
+        gap: 2.5rem;
+        justify-content: space-between;
+
+        .gridOne{
+            width: 50%;
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                .logo{
+                    width: 60px;
+                }
+            }
+            p{
+                font-size: 1rem;
+                max-width: 250px;
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+                .icon{
+                    color: var(--greyText);
+                }
+            }
+        }
+
+        .wrapperLinks{
+            gap: 1rem;
+            width: 50%;
+            justify-content: space-between;
+            align-items: start;
+
+            .footerLinks{
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: .5rem;
+            }
+
+            a{
+                color: var(--greyText);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .sectionContainer{
+            .gridOne{
+                width: 30%;
+            }
+            .wrapperLinks{
+                width: 70%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 810px){
+        .sectionContainer{
+            flex-direction: column;
+
+            .gridOne{
+                width: 100%;
+                align-items: start;
+            }
+
+            .wrapperLinks{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .wrapperLinks{
+           flex-direction: column;
         }
     }
 }

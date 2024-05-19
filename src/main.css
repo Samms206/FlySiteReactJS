@@ -724,4 +724,75 @@ h2 {
   .subscribe .sectoinContainer > .inputDiv .btn {
     margin-top: 1rem;
   }
+}
+
+.footer {
+  width: 100%;
+  background: var(--SecondaryColor);
+  padding-bottom: 4rem;
+}
+.footer .sectionContainer {
+  width: 100%;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+.footer .sectionContainer .gridOne {
+  width: 50%;
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+}
+.footer .sectionContainer .gridOne .logoDiv .logo {
+  width: 60px;
+}
+.footer .sectionContainer .gridOne p {
+  font-size: 1rem;
+  max-width: 250px;
+}
+.footer .sectionContainer .gridOne .socialIcon {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer .sectionContainer .gridOne .socialIcon .icon {
+  color: var(--greyText);
+}
+.footer .sectionContainer .wrapperLinks {
+  gap: 1rem;
+  width: 50%;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer .sectionContainer .wrapperLinks .footerLinks {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+.footer .sectionContainer .wrapperLinks a {
+  color: var(--greyText);
+}
+@media screen and (max-width: 1000px) {
+  .footer .sectionContainer .gridOne {
+    width: 30%;
+  }
+  .footer .sectionContainer .wrapperLinks {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .footer .sectionContainer {
+    flex-direction: column;
+  }
+  .footer .sectionContainer .gridOne {
+    width: 100%;
+    align-items: start;
+  }
+  .footer .sectionContainer .wrapperLinks {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer .wrapperLinks {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
